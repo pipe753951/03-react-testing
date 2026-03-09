@@ -20,8 +20,10 @@ describe("MyAwesomeApp", () => {
     render(<MyHomeworkAppTwo />);
     screen.debug();
 
-    screen.getByRole("heading", {
-      level: 1,
-    });
+    // screen.getByRole("heading", {
+    //   level: 1,
+    // });
+
+    screen.getByTestId("first-name-title");
   });
 });

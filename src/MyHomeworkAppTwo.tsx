@@ -27,7 +27,7 @@ export function MyHomeworkAppTwo() {
   return (
     <>
       <section>
-        <h1>{firstName}</h1>
+        <h1 data-testid="first-name-title">{firstName}</h1>
         <h2>{lastName}</h2>
 
         <p>{favoriteBooks.join("; ")}</p>
