@@ -25,7 +25,7 @@ const myStyles: CSSProperties = {
 
 export function MyHomeworkAppTwo() {
   return (
-    <>
+    <div data-testid="div-app">
       <section>
         <h1 data-testid="first-name-title">{firstName}</h1>
         <h2>{lastName}</h2>
@@ -47,6 +47,6 @@ export function MyHomeworkAppTwo() {
         {/* <p>{address}</p> - React no permite colocar objetos */}
         <p style={myStyles}>{JSON.stringify(address)}</p>
       </section>
-    </>
+    </div>
   );
 }

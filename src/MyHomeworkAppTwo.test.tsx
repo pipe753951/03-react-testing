@@ -26,4 +26,14 @@ describe("MyAwesomeApp", () => {
 
     screen.getByTestId("first-name-title");
   });
+
+  test("Should match snapshot", () => {
+    const { container } = render(<MyHomeworkAppTwo />);
+    expect(container).toMatchSnapshot();
+  });
+
+  test("Should match snapshot (Screen)", () => {
+    render(<MyHomeworkAppTwo />);
+    expect(screen.getByTestId("div-app")).toMatchSnapshot();
+  });
 });

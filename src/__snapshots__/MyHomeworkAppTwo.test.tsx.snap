@@ -1,0 +1,83 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp > Should match snapshot (Screen) 1`] = `
+<div
+  data-testid="div-app"
+>
+  <section>
+    <h1
+      data-testid="first-name-title"
+    >
+      Gabriel José
+    </h1>
+    <h2>
+      García Márquez
+    </h2>
+    <p>
+      Bible; Le Petit Prince; La historia, los viajes y la abuela
+    </p>
+    <p>
+      4
+    </p>
+    <p>
+      2 + 2
+    </p>
+  </section>
+  <hr />
+  <section>
+    <h1>
+      Not active
+    </h1>
+  </section>
+  <hr />
+  <section>
+    <p
+      style="background-color: rgb(224, 250, 240); padding: 10px; border-radius: 20px;"
+    >
+      {"zipCode":"ABC-123","country":"Colombia"}
+    </p>
+  </section>
+</div>
+`;
+
+exports[`MyAwesomeApp > Should match snapshot 1`] = `
+<div>
+  <div
+    data-testid="div-app"
+  >
+    <section>
+      <h1
+        data-testid="first-name-title"
+      >
+        Gabriel José
+      </h1>
+      <h2>
+        García Márquez
+      </h2>
+      <p>
+        Bible; Le Petit Prince; La historia, los viajes y la abuela
+      </p>
+      <p>
+        4
+      </p>
+      <p>
+        2 + 2
+      </p>
+    </section>
+    <hr />
+    <section>
+      <h1>
+        Not active
+      </h1>
+    </section>
+    <hr />
+    <section>
+      <p
+        style="background-color: rgb(224, 250, 240); padding: 10px; border-radius: 20px;"
+      >
+        {"zipCode":"ABC-123","country":"Colombia"}
+      </p>
+    </section>
+  </div>
+</div>
+`;
