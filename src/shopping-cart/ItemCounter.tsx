@@ -9,6 +9,10 @@ interface Props {
 }
 
 export function ItemCounter({ name, quantity = 1 }: Props) {
+  if (quantity < 1) {
+    throw new Error("ItenCounter won't work because 'quantity' is less than 1");
+  }
+
   // const itemCounterObj = useState(10);
   const [count, setCount] = useState(quantity);
 

@@ -32,7 +32,7 @@ describe("ItemCounter", () => {
     expect(screen.getByText("2")).toBeDefined();
   });
 
-  test("Should decrease count when -1 button is pressed and quantity is '5'", () => {
+  test("Should decrease count when -1 button is pressed and quantity is 5", () => {
     const quantity = 5;
 
     render(<ItemCounter name="Test item" quantity={quantity} />);
@@ -44,7 +44,7 @@ describe("ItemCounter", () => {
     expect(screen.getByText("4")).toBeDefined();
   });
 
-  test("Should decrease count when -1 button is pressed and quantity is '1'", () => {
+  test("Should decrease count when -1 button is pressed and quantity is 1", () => {
     const quantity = 1;
     render(<ItemCounter name="Test item" quantity={quantity} />);
 
@@ -75,5 +75,16 @@ describe("ItemCounter", () => {
     expect(itemText.style.color).toBe("black");
   });
 
-  // TODO: Create test (should reject quantity when is less than 1)
+  describe("Custom tests (outside lessons)", () => {
+    test("Should reject quantity when is less than 1", () => {
+      const quantity = 0;
+      const name = "Test item";
+
+      const renderTest = () => {
+        render(<ItemCounter name={name} quantity={quantity} />);
+      };
+
+      expect(renderTest).toThrow();
+    });
+  });
 });
