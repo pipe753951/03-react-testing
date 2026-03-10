@@ -1,0 +1,87 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CounterApp > Should match snapshot 1`] = `
+<div
+  role="application"
+>
+  <h1>
+    Carrito de compras
+  </h1>
+  <section
+    class="_item-row_8b32a2"
+  >
+    <h2
+      class="_item-row_8b32a2"
+      style="color: black;"
+    >
+      Biblia RVR1960
+    </h2>
+    <button>
+      +1
+    </button>
+    <span>
+      10
+    </span>
+    <button>
+      -1
+    </button>
+  </section>
+  <section
+    class="_item-row_8b32a2"
+  >
+    <h2
+      class="_item-row_8b32a2"
+      style="color: black;"
+    >
+      Cien años de soledad
+    </h2>
+    <button>
+      +1
+    </button>
+    <span>
+      2
+    </span>
+    <button>
+      -1
+    </button>
+  </section>
+  <section
+    class="_item-row_8b32a2"
+  >
+    <h2
+      class="_item-row_8b32a2"
+      style="color: black;"
+    >
+      El principito
+    </h2>
+    <button>
+      +1
+    </button>
+    <span>
+      5
+    </span>
+    <button>
+      -1
+    </button>
+  </section>
+  <section
+    class="_item-row_8b32a2"
+  >
+    <h2
+      class="_item-row_8b32a2"
+      style="color: red;"
+    >
+      El coronel no tiene quién le escriba
+    </h2>
+    <button>
+      +1
+    </button>
+    <span>
+      1
+    </span>
+    <button>
+      -1
+    </button>
+  </section>
+</div>
+`;

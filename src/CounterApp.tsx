@@ -14,7 +14,7 @@ const booksInCart: BookInCart[] = [
 
 export function CounterApp() {
   return (
-    <>
+    <div role="application">
       <h1>Carrito de compras</h1>
       {/* <ItemCounter name="Biblia RVR1960" quantity={10} />
       <ItemCounter name="Cien años de soledad" quantity={2} />
@@ -24,6 +24,6 @@ export function CounterApp() {
       {booksInCart.map(({ bookName, quantity }) => (
         <ItemCounter key={quantity} name={bookName} quantity={quantity} />
       ))}
-    </>
+    </div>
   );
 }
