@@ -36,7 +36,14 @@ export function ItemCounter({ name, quantity = 1 }: Props) {
       // }}
     >
       {/* <h2 className="item-text">{name}</h2> */}
-      <h2 className={styles["item-row"]}>{name}</h2>
+      <h2
+        className={styles["item-row"]}
+        style={{
+          color: count === 1 ? "red" : "black",
+        }}
+      >
+        {name}
+      </h2>
       <button
         onMouseEnter={() => {
           console.log(`Mouse enter ${name}`);
