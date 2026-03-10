@@ -18,7 +18,7 @@ describe("MyAwesomeApp", () => {
 
   test("Should render firstName and lastName (Using 'screen')", () => {
     render(<MyHomeworkAppTwo />);
-    screen.debug();
+    // screen.debug();
 
     // screen.getByRole("heading", {
     //   level: 1,
