@@ -3,12 +3,12 @@ import { useState } from "react";
 // import "./ItemCounter.css";
 import styles from "./ItemCounter.module.css";
 
-interface Props {
+export interface ItemCounterProps {
   name: string;
   quantity?: number;
 }
 
-export function ItemCounter({ name, quantity = 1 }: Props) {
+export function ItemCounter({ name, quantity = 1 }: ItemCounterProps) {
   if (quantity < 1) {
     throw new Error("ItenCounter won't work because 'quantity' is less than 1");
   }
