@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { add, multiply, subtract } from "./math.helper";
+import { add, divide, multiply, subtract } from "./math.helper";
 
 describe("Add", () => {
   test("Should add two positive numbers", () => {
@@ -44,6 +44,7 @@ describe("Subtract", () => {
     expect(result).toBe(a - b);
   });
 });
+
 describe("Multiply", () => {
   test("Should multiply a positive with cero", () => {
     const a = 4;
@@ -61,5 +62,25 @@ describe("Multiply", () => {
     const result = multiply(a, b);
 
     expect(result).toBe(a * b);
+  });
+});
+
+describe("Divide", () => {
+  test("Should divide a positive with cero", () => {
+    const a = 4;
+    const b = 0;
+
+    const result = divide(a, b);
+
+    expect(result).toBe(a / b);
+  });
+
+  test("Should divide two rational numbers", () => {
+    const a = 4.4;
+    const b = 3.1416;
+
+    const result = divide(a, b);
+
+    expect(result).toBe(a / b);
   });
 });
